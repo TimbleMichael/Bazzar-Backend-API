@@ -1,25 +1,12 @@
-# README
+# BAZZAR - Recipe creating application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Technology
 
-Things you may want to cover:
+#### Ruby version - 2.6.1
 
-* Ruby version
+#### Database creation - using Postgresql (version 12.12) for the data base.
 
-* System dependencies
+#### Install Postgresql in the terminal with -> sudo apt install postgresql postgresql-contrib
+#### Start the database initilisation (in terminal) with -> sudo service postgresql start
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-Rails backend API for Bazzar application
