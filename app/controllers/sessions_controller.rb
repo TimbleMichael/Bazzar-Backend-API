@@ -14,19 +14,13 @@ class SessionsController < ApplicationController
         else
             render json: { status: 401 }
         end
-
-        puts session[:user_id]
-        puts "hai"
     end
 
-
-
     def logged_in
-        if session[:user_id]
+        if @current_user
             render json: {
                 logged_in: true,
                 user: @current_user
-            
             }
         else
             render json: {
