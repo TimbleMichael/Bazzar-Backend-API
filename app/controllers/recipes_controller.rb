@@ -3,7 +3,6 @@ class RecipesController < ApplicationController
     def index
         recipe = Recipe.all
         render json: recipe.order("created_at")
-
     end
 
     def create

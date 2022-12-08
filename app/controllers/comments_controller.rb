@@ -7,7 +7,10 @@ class CommentsController < ApplicationController
     def create
         comment = Comment.create(comment_params)
         if comment
-            render json: comment
+            render json: {
+                comment: comment,
+                status: :created
+            }
         else
             render json: comment.errors
         end
@@ -24,7 +27,7 @@ class CommentsController < ApplicationController
     private
 
     def comment_params
-        params.require(:comment).permit(:body, :recipe_id)
+        params.require(:comment).permit(:body, :recipe_id, :user_id)
     end
 
 
