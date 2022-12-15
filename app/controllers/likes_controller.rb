@@ -1,4 +1,10 @@
 class LikesController < ApplicationController
+
+    def index
+        like = Like.all
+        render json: like
+    end
+
     def create
         like = Like.create(like_params)
 
